@@ -2,9 +2,9 @@
     --ff: 'Inter', sans-serif;
 
     --h1: bold 2.488rem/1.4em var(--ff);
-    --h2: bold 2.074rem/1.4em var(--ff);
-    --h3: bold 1.728rem/1.4em var(--ff);
-    --h4: normal 1.440rem/1.4em var(--ff);
+    --h2: bold 1.728rem/1.4em var(--ff);
+    --h3: normal 1.728rem/1.4em var(--ff);
+    --h4: 300 1.440rem/1.4em var(--ff);
 
     --p: 1.125rem/1.4em var(--ff);
     --p2: 1rem/1.4em var(--ff);
@@ -26,9 +26,8 @@ html {
     font-size: 16px;
 
     @media (max-width: 768px) {
-        font-size: 13.5px;
+        font-size: 14px;
     }
-    
 }
 
 body {
