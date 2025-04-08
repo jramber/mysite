@@ -211,7 +211,7 @@ button {
     }
 
     & .options-menu-wrapper.visible{
-        max-height: 100vh;
+        max-height: 100dvh;
     }
 }
 

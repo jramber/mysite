@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             enableScroll();
             options_menu_wrapper.classList.remove('visible');
+            options_icon.classList.toggle('active');
         });
     })
 
