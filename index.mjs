@@ -26,6 +26,12 @@ export const handler = async (event) => {
       headers: { 'Content-Type': 'text/css' },
       body: fs.readFileSync('style.css', 'utf8'),
     };
+  } else if (route === '/default/scripts.js') {
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/javascript' },
+      body: fs.readFileSync('scripts.js', 'utf8'),
+    };
   }
 
   return {
