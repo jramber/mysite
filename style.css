@@ -250,6 +250,21 @@ button {
 
     & .svg-touch-area.options {
         display: none;
+        
+        & .close-icon {
+            display: none;
+        }
+    }
+
+    & .svg-touch-area.options.active {
+
+        & .open-icon {
+            display: none;
+        }
+        
+        & .close-icon {
+            display: block;
+        }
     }
 
     @media (max-width: 992px) {

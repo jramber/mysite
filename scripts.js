@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     options_icon.addEventListener('click', function() {
         options_menu_wrapper.classList.toggle('visible');
+        options_icon.classList.toggle('active');
 
         if (options_menu_wrapper.classList.contains('visible')) {
             disableScroll();
