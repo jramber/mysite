@@ -24,6 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    const navigation_links = document.querySelectorAll('.navigation-link');
+    navigation_links.forEach(function(link) {
+        link.addEventListener('click', function() {
+            enableScroll();
+            options_menu_wrapper.classList.remove('visible');
+        });
+    })
+
     /*
         const navbar = document.querySelector('.navbar');
         const offset = document.querySelector('.offset');
