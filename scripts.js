@@ -7,14 +7,15 @@ function enableScroll () {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-
+    const header = document.querySelector('.header-wrapper .header');
     const options_menu_wrapper = document.querySelector('.options-menu-wrapper');
     const options_menu = document.querySelector('.options-menu');
     const options_icon = document.querySelector('.options');
 
-    options_menu.style.height = window.screen.height - document.querySelector('.header').offsetHeight + 'px';
+    options_menu_wrapper.style.top = header.offsetHeight + 'px';
 
     options_icon.addEventListener('click', function() {
+        options_menu.style.height = window.screen.height - document.querySelector('.header').offsetHeight + 'px';
         options_menu_wrapper.classList.toggle('visible');
         options_icon.classList.toggle('active');
 

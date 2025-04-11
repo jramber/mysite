@@ -154,11 +154,12 @@ button {
     position: sticky;
     top: 0;
     width: 100vw;
-    display: flex;
-    flex-flow: column nowrap;
 
     & .options-menu-wrapper {
+        position: absolute;
+        top: 0;
         max-height: 0;
+        width: 100vw;
         overflow: hidden;
         transition: max-height 0.2s ease-in-out;
 
